@@ -31,9 +31,13 @@ exports.getUsuarioById = getUsuarioById;
  * @param res
  */
 const createUsuario = (req, res) => {
+    const { email, password } = req.body;
     res.json({
-        msg: "Entro a createUsuario",
-        body: req.body
+        msg: "Entro a createUsuariooooo",
+        body: req.body,
+        email: email,
+        password: password,
+        otro: "Otro nodo"
     });
 };
 exports.createUsuario = createUsuario;
